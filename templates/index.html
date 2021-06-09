@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Covid Data </title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <div id="navigation-bar">
+            <nav>
+                <span id="nav-title"><a id="anchor" href="http://127.0.0.1:5000">COVID DATA</a></span>
+                <span id="nav-right-link"><a id="anchor" href="about.html">About &nbsp;&nbsp;</a></span>
+                <span id="nav-right-link"><a id="anchor" href="usefulLinks.html">Useful Links</a></span>
+            </nav>
+        </div>
+        <h1 id="h1">Covid Data India</h1>
+        <br>
+        <div id="all-india">
+            <div id="india">
+                <p>Total Cases</p>
+                <p style="color: #cc0000;"><b>{{ return_list[0] }}</b></p>
+            </div>
+            <div id="india">
+                <p>Total Recovered</p>
+                <p style="color: #3333ff;"><b>{{ return_list[1] }}</b></p>
+            </div>
+            <div id="india">
+                <p>Total Vaccinated</p>
+                <p style="color:#00802b;"><b>{{ return_list[2] }}</b></p>
+            </div>
+        </div>
+        <br><br>
+        <div id="state-wise">
+            <p id="state-wise-data">Search state wise data</p>
+
+            <hr>
+            <br>
+            <form action="http://127.0.0.1:5000/check_state_data" method="POST">
+                <label for="state" id="label-id">Enter a valid State:</label>
+                <input type="text" id="indian-state" name="state" placeholder="">
+                <button type="submit" id="submit">Search</button>
+            </form>
+
+
+        </div>
+    </body>
+</html>
