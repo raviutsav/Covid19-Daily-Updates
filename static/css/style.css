@@ -18,7 +18,7 @@ nav
     margin-top: 0px;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #e60000;
 }
 
 #nav-right-link
@@ -32,11 +32,11 @@ nav
 {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #e60000;
 }
 #anchor:hover
 {
-    color: #ff3333;
+    color: #b30000;
 }
 
 #h1
