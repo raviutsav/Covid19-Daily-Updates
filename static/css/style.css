@@ -166,7 +166,6 @@ input[type=text]:focus
 
 #meme
 {
-    margin-left: 275px;
     height: 400px;
     width: 700px;
     border-radius: 10px;
@@ -188,4 +187,9 @@ input[type=text]:focus
 #button-anchor: hover
 {
     color: white;
+}
+#about-image
+{
+    display: flex;
+    justify-content: center;
 }
