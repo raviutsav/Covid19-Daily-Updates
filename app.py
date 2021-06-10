@@ -61,7 +61,7 @@ def check_state_data():
 
         main_list = covid_data["cases_time_series"]
 
-        state = indian_state.capitalize()
+        state = indian_state.title()
         total_cases = 0
 
         statewise_data = covid_data['statewise']
