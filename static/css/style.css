@@ -51,10 +51,11 @@ nav
     background-color: #ffe6e6;
   }
 
-#all-india
-{
-    padding-left: 380px;
-}
+  #all-india
+  {
+      display: flex;
+    justify-content: center;
+  }
 
 #useful
 {
