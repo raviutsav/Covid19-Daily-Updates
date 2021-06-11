@@ -86,7 +86,7 @@ def check_state_data():
         tested_list = covid_data["tested"]
         total_vaccinated = tested_list[-1]["totalindividualsvaccinated"]
 
-        return_list = [str(total_cases), str(total_recovered), str(total_vaccinated), str(total_case_state), str(total_recovered_state), str(indian_state)]
+        return_list = [str(total_cases), str(total_recovered), str(total_vaccinated), str(total_case_state), str(total_recovered_state), str(state)]
 
     return render_template('stateData.html', return_list=return_list)
 
