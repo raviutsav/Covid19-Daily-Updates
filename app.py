@@ -66,6 +66,9 @@ def check_state_data():
 
         statewise_data = covid_data['statewise']
 
+        total_case_state = 0
+        total_recovered_state = 0
+
         for i in range(len(statewise_data)):
             if 'state' in statewise_data[i]:
                 if statewise_data[i]["state"] == state:
