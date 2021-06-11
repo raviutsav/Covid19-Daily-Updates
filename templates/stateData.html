@@ -28,14 +28,19 @@
             </div>
         </div>
         <br><br>
-        <div id="state-wise">
-            <p id="state-wise-data">Search state wise data</p>
-            <hr><br>
-            <h2> Total no of cases in <b>{{ return_list[-1] }}</b> is:  <b>{{ return_list[3] }}</b> </h2>
-            <h2> Total no of recovered cases in <b>{{ return_list[-1] }}</b> is: <b>{{ return_list[4] }}</b></h2>
 
-
-        </div>
+        {% if return_list[3] != 0 %}
+            <div id="state-wise">
+                <p id="state-wise-data">Search state wise data</p>
+                <hr><br>
+                <h2> Total no of cases in <b>{{ return_list[-1] }}</b> is:  <b>{{ return_list[3] }}</b> </h2>
+                <h2> Total no of recovered cases in <b>{{ return_list[-1] }}</b> is: <b>{{ return_list[4] }}</b></h2>
+            </div>
+        {% else %}
+            <div id="state-wise">
+                <p id="state-wise-data">Please enter a valid Indian state.</p>
+            </div>
+        {% endif %}
         <div id="button">
                 <p style="margin-top: -1px;"><a id="button-anchor" href="https://covid19-daily-updates.herokuapp.com">Reset</a></p>
         </div>
